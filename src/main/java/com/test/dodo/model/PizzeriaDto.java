@@ -11,5 +11,5 @@ public class PizzeriaDto {
     private Integer countryId;
     private String countryCode;
     private String countryName;
-    private List <Pizzeria> pizzeria;
+    private List <Pizzeria> pizzerias;
 }

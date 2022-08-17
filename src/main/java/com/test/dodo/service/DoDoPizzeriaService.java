@@ -1,5 +1,7 @@
 package com.test.dodo.service;
 
+import com.test.dodo.model.Pizzeria;
+import com.test.dodo.model.PizzeriasDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

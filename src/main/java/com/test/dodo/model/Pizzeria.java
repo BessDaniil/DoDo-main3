@@ -10,7 +10,7 @@ import java.util.List;
     public class Pizzeria {
     private Integer id;
     private String name;
-    private Integer uuid;
+    private String uuid;
     private String alias;
     private String startDate;
     private Integer timeZoneShift;
@@ -56,7 +56,7 @@ import java.util.List;
     @Getter
     @ToString
     static class House {
-        private Integer number;
+        private String number;
     }
 
     @Getter
