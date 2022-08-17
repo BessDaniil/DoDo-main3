@@ -12,7 +12,7 @@ public class DoDoPizzeriaService {
 
     private final RestTemplate restTemplate;
 
-    public String findPizzeriasByCountryId(final Integer countryId) {
-        return restTemplate.getForObject(FIND_PIZZERIAS_URL + countryId, String.class);
+    public PizzeriasDto findPizzeriasByCountryId(final Integer countryId) {
+        return restTemplate.getForObject(FIND_PIZZERIAS_URL + countryId, PizzeriasDto.class);
     }
 }
