@@ -22,7 +22,7 @@ public class DoDoExecutor {
 
     @PostConstruct
     public void execute() {
-        final List<String> result = new ArrayList<>();
+        final List<PizzeriasDto> result = new ArrayList<>();
 
         final DoDoCountriesDto doDoCountriesDto = doDoCountryService.findCountries();
 
@@ -36,7 +36,7 @@ public class DoDoExecutor {
         }
 
         for (Integer id : countryIds) {
-            final String pizzeriasInCountry = doDoPizzeriaService.findPizzeriasByCountryId(id);
+            final PizzeriasDto pizzeriasInCountry = doDoPizzeriaService.findPizzeriasByCountryId(id);
             result.add(pizzeriasInCountry);
         }
 
